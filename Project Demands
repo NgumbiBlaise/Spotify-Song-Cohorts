@@ -1,0 +1,74 @@
+# Project Demands: Creating Cohorts of Songs
+
+## Overview
+
+Spotify aims to enhance user experience by creating specialized cohorts of songs. This project involves the analysis of various song features to group songs into meaningful cohorts, which will aid in song recommendations. As a data scientist, your task is to perform exploratory data analysis (EDA) and cluster analysis to achieve this goal.
+
+## Objectives
+
+1. **Data Inspection and Cleaning**:
+    - Inspect the dataset for duplicates, missing values, irrelevant entries, and outliers.
+    - Clean the data to ensure it is suitable for further analysis.
+
+2. **Exploratory Data Analysis (EDA) and Feature Engineering**:
+    - Use visualizations to explore the data and identify patterns.
+    - Determine which two albums should be recommended based on the number of popular songs.
+    - Analyze how a song's popularity relates to various features and how this relationship has changed over time.
+    - Discuss the importance of dimensionality reduction techniques and provide insights.
+
+3. **Cluster Analysis**:
+    - Identify the appropriate number of clusters.
+    - Use suitable clustering algorithms to create song cohorts.
+    - Define each cluster based on the song features.
+
+## Data Description
+
+The dataset contains information about songs from Spotify's API. Here are the key variables:
+
+- `name`: The name of the song.
+- `album`: The name of the album.
+- `release_date`: The release date of the album.
+- `track_number`: The order of the song on the album.
+- `id`: The Spotify ID for the song.
+- `uri`: The Spotify URI for the song.
+- `acousticness`: A confidence measure of whether the track is acoustic.
+- `danceability`: A measure of how suitable a track is for dancing.
+- `energy`: A perceptual measure of intensity and activity.
+- `instrumentalness`: Predicts whether a track contains no vocals.
+- `liveness`: Detects the presence of an audience in the recording.
+- `loudness`: The overall loudness of a track in decibels.
+- `speechiness`: Detects the presence of spoken words in a track.
+- `tempo`: The overall estimated tempo of a track in beats per minute.
+- `valence`: A measure of the musical positiveness conveyed by a track.
+- `popularity`: The popularity of the song from 0 to 100.
+- `duration_ms`: The duration of the track in milliseconds.
+
+## Steps to Perform
+
+### 1. Initial Data Inspection and Cleaning
+
+- **Check for duplicates**: Identify and remove duplicate entries.
+- **Handle missing values**: Address any missing data appropriately.
+- **Remove irrelevant entries**: Ensure all data points are relevant to the analysis.
+- **Identify and handle outliers**: Detect and manage outliers to prevent skewed analysis.
+
+### 2. Exploratory Data Analysis (EDA) and Feature Engineering
+
+- **Visualizations**: Create plots to explore the data and identify trends.
+- **Album Recommendations**: Determine which albums to recommend based on popular songs.
+- **Popularity Analysis**: Explore the relationship between song popularity and various features.
+- **Dimensionality Reduction**: Apply techniques like PCA to reduce data dimensions and explain their importance.
+
+### 3. Cluster Analysis
+
+- **Determine Number of Clusters**: Use methods like the elbow method to find the optimal number of clusters.
+- **Apply Clustering Algorithms**: Use algorithms such as K-means to create cohorts of songs.
+- **Cluster Definition**: Define and interpret each cluster based on the song features.
+
+## Conclusion
+
+This project aims to leverage Spotify's song data to create meaningful cohorts of songs that enhance the recommendation system. By following the outlined steps and objectives, you will gain a deeper understanding of the factors that contribute to song clustering and improve user engagement through personalized recommendations.
+
+---
+
+
